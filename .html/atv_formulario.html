@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade formulário</title>
+  </head>
+  <body>
+    <h1>Cadastro</h1>
+    <form action="roles" method="get">
+      <label for="nome"> </label>
+      <input type="text" name="nome" id="nome" placeholder="Digite seu nome" />
+
+      <label for="sobrenome"> </label>
+      <input
+        type="text"
+        name="sobrenome"
+        id="sobrenome"
+        placeholder="Digite seu sobrenome"
+      />
+
+      <br />
+      <br />
+
+      <label for="nickname"> </label>
+      <input
+        type="text"
+        name="nickname"
+        id="nickname"
+        placeholder="Digite seu apelido/nickname"
+      />
+
+      <label for="email"> </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Digite seu email"
+      />
+
+      <br />
+      <br />
+
+      <label for="password"> </label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Digite sua senha"
+      />
+
+      <br />
+      <br />
+
+      <input type="submit" value="Cadastrar-se" />
+
+      <br />
+      <br />
+      <br />
+
+      <h1>Página de contato</h1>
+
+      <fieldset>
+        <legend>Contato</legend>
+        <label for="nome"> Nome: </label>
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="Digite seu nome"
+        />
+
+        <br />
+        <br />
+
+        <label for="email"> Email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Digite seu email"
+        />
+
+        <br />
+        <br />
+
+        <label for="phone"> Telefone: </label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="Insira seu telefone"
+          minlength="11"
+          maxlength="15"
+          required
+        />
+        <br />
+        <br />
+        <label for="contato">Mensagem: </label>
+        <textarea
+          id="contato"
+          name="contato"
+          placeholder="Digite a mensagem para contato "
+          rows="10"
+          cols="100"
+        ></textarea>
+      </fieldset>
+    </form>
+  </body>
+</html>
