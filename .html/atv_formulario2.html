@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade2</title>
+  </head>
+  <body>
+    <h1>Cadastro Aluno</h1>
+    <form action="roles" method="get">
+      <label for=" nome"> Nome: </label>
+      <input type="text" name="nome" id="nome" required />
+
+      <br />
+      <br />
+
+      <label for="idade"> Idade: </label>
+      <input type="number" name="idade" id="idade" min="18" max="19" />
+
+      <br />
+      <br />
+
+      <label for="imgperfil"> Imagem de perfil: </label>
+      <input type="file" name="imgperfil" id="imgperfil" />
+
+      <br />
+      <br />
+
+      <label for="email"> Email: </label>
+      <input type="email" name="email" id="email" required />
+
+      <br />
+      <br />
+
+      <label for="password"> Senha: </label>
+      <input type="password" name="password" id="password" required />
+
+      <br />
+      <br />
+
+      <label for="data"> Selecione a data do seu aniversário </label>
+      <input type="date" id="data" name="data" max="2024-09-10" />
+
+      <br />
+      <br />
+
+      <label for="phone"> Telefone: </label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        minlength="11"
+        maxlength="15"
+        required
+      />
+
+      <br />
+      <br />
+      <label for="sexo">Sexo:</label>
+      <input type="radio" name="sexo" id="feminino" value="feminino" />
+      <label for="feminino"> Feminino </label>
+
+      <input
+        type="radio"
+        name="sexo"
+        id="masculino"
+        value="masculino"
+        required
+      />
+      <label for="masculino"> Masculino </label>
+
+      <br />
+      <br />
+
+      <label for="country"> Estado </label>
+      <select name="country" id="country">
+        <option value="Acre">Acre</option>
+        <option value="Alagoas">Alagoas</option>
+        <option value="Amapá">Amapá</option>
+        <option value="Amazonas">Amazonas</option>
+        <option value="Bahia">Bahia</option>
+        <option value="Ceará">Ceará</option>
+        <option value="Distrito_Federal">Distrito Federal</option>
+        <option value="Espirito_Santo">Espírito Santo</option>
+        <option value="Goias">Goiás</option>
+        <option value="Maranhao">Maranhão</option>
+        <option value="Mato_Grosso">Mato Grosso</option>
+        <option value="Mato_Grosso_do_Sul">Mato Grosso do Sul</option>
+        <option value="Minas_Gerais">Minas Gerais</option>
+        <option value="Para">Pará</option>
+        <option value="Paraiba">Paraíba</option>
+        <option value="Parana">Paraná</option>
+        <option value="Pernambuco">Pernambuco</option>
+        <option value="Piaui">Piauí</option>
+        <option value="Rio_de_Janeiro">Rio de Janeiro</option>
+        <option value="Rio_Grande_do_Norte">Rio Grande do Norte</option>
+        <option value="Rio_Grande_do_Sul">Rio Grande do Sul</option>
+        <option value="Rondonia">Rondônia</option>
+        <option value="Roraima">Roraima</option>
+        <option value="Santa_Catarina">Santa Catarina</option>
+        <option value="Sao_Paulo">São Paulo</option>
+        <option value="Sergipe">Sergipe</option>
+        <option value="Tocantins">Tocantins</option>
+      </select>
+
+      <br />
+      <br />
+
+      <label for="mensagem">Mensagem: </label>
+      <textarea id="mensagem" name="mensagem"></textarea>
+    </form>
+  </body>
+</html>
