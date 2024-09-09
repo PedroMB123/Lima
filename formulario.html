@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <!-- form cria um formulário;
+    action indica aonde os dados irão no back-end
+    method
+    -->
+    <form action="roles" method="get">
+      <!-- label indica qual input da caixa, e o nome dela -->
+      <label for=" nome"> Nome: </label>
+      <!-- input indica os valores da caixa 
+    type atribui o tipo da caixa, neste caso é um tipo de texto
+    name atribui o nome da caixa
+    id atribui o identificador exclusivo, o qual é único dentro de um arquivo
+    placeholder adiciona um texto dentro da caixa
+    required faz com que seja obrigatório adicionar dados na caixa para que o formulário seja enviado
+    -->
+      <input
+        type="text"
+        name="nome"
+        id="nome"
+        placeholder="Digite seu nome"
+        required
+      />
+
+      <br />
+      <br />
+
+      <label for="email"> Email: </label>
+      <!-- O type neste input é um tipo email, o qual a caixa só aceita um email como resposta -->
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Digite seu email"
+        required
+      />
+
+      <br />
+      <br />
+
+      <label for="password"> Senha: </label>
+      <!-- O type neste input é do tipo password, o qual adiciona bullets quando se digita na caixa -->
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Digite sua senha"
+        required
+      />
+
+      <br />
+      <br />
+
+      <label for="phone"> Telefone: </label>
+      <!-- O type neste input é do tipo tel, forma semântica de pedir número de telefone na caixa
+    minLength atribui a quantidade mínima de caracteres da caixa
+    maxLength atribui a quantidade máxima de caracters da caixa
+    -->
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        placeholder="Insira seu telefone"
+        minlength="11"
+        maxlength="15"
+        required
+      />
+
+      <br />
+      <br />
+
+      <label for="country"> Pais: </label>
+      <!-- select é utilizado para abrir uma aba de opções
+    option são as opções que aparecerão na aba
+    -->
+      <select name="country" id="country">
+        <option value="Brasil">Brasil</option>
+        <option value="Argentina">Argentina</option>
+      </select>
+
+      <br />
+      <br />
+
+      <label for="idade"> Idade: </label>
+      <!-- O type neste input é number, utilizado para pedir números na caixa -->
+      <input
+        type="number"
+        name="idade"
+        id="idade"
+        min="18"
+        max="19"
+        placeholder="Insira sua idade"
+      />
+
+      <br />
+      <br />
+
+      <label for="imgperfil"> Imagem de perfil: </label>
+      <!-- O type file pede para o usuário adicionar um arquivo local no formulário -->
+      <input type="file" name="imgperfil" id="imgperfil" />
+
+      <br />
+      <br />
+
+      <label for="produto"> fotos dos produtos: </label>
+      <input type="file" name="produto" id="produto" multiple />
+
+      <br />
+      <br />
+      <label for="valor"> Valor do produto: </label>
+      <!-- step adiciona intervalos entre os valores que o usuário pode adicionar -->
+      <input
+        type="number"
+        name="valor"
+        id="valor"
+        step="0.10"
+        placeholder="Insira o valor do produto"
+      />
+
+      <br />
+      <br />
+
+      <label for="cor_favorita">Cor favorita: </label>
+      <!-- O type deste input é color, o qual permite o usuário escolher dentro de uma paleta de cores um cor -->
+      <input type="color" name="color" id="cor_favorita" />
+
+      <br />
+      <br />
+
+      <!-- O type deste input é checkbox, criando botões de seleções -->
+      <input type="checkbox" name="basquete" id="basquete" />
+      <label for="basquete"> Basquete </label>
+
+      <input type="checkbox" name="volei" id="volei" />
+      <label for="volei"> Volei </label>
+
+      <input type="checkbox" name="futebol" id="futebol" />
+      <label for="volei"> Basquete </label>
+
+      <br />
+      <br />
+
+      <!-- O tipo radio cria botões de seleção em que só um pode ser clicado  -->
+      <input type="radio" name="sexo" id="feminino" value="feminino" />
+      <label for="feminino"> Feminino </label>
+
+      <input
+        type="radio"
+        name="sexo"
+        id="masculino"
+        value="masculino"
+        required
+      />
+      <label for="masculino"> Masculino </label>
+
+      <br />
+      <br />
+
+      <label for="descricao">Descrição: </label>
+      <!-- textarea cria uma aba de escrita -->
+      <textarea
+        id="descricao"
+        name="descricao"
+        placeholder="Digite um pouco sobre você: "
+      ></textarea>
+
+      <br />
+      <br />
+
+      <fieldset>
+        <legend>Datas</legend>
+        <label for="monthyear"> Mês e ano de seu aniversário: </label>
+        <!-- O type desse input permite voce escolher mês e ano -->
+        <input type="month" id="monthyear" name="monthyear" />
+
+        <br />
+        <br />
+
+        <label for="data"> Selecione a data do seu aniversário </label>
+        <!-- Neste type o usuário pode selecionar um data completa -->
+        <input type="date" id="data" name="data" />
+      </fieldset>
+
+      <br />
+      <br />
+
+      <!-- O tipo submit cria um botão para enviar o formulário -->
+      <input type="submit" value="Enviar formulário" />
+    </form>
+  </body>
+</html>
