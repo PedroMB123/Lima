@@ -1,0 +1,52 @@
+/*  Exemplo de atividade
+#cardUnico h1 {
+  color: red;
+}
+
+.container h1 {
+  color: wheat;
+}
+
+#cardUnico p {
+  color: aquamarine;
+  font-size: 40px;
+}
+*/
+
+.sobre a {
+  font-size: 18px;
+}
+
+#menu {
+  background-color: black;
+}
+
+#menu a {
+  color: white;
+}
+
+.rodape {
+  height: 60px;
+}
+
+#rodape {
+  background-color: darkgray;
+}
+
+.rodape p {
+  color: lightblue;
+}
+
+#container {
+  background: purple;
+  height: 500px;
+}
+
+.img {
+  height: 50%;
+  width: 100%;
+}
+
+#container p {
+  font-size: 20px;
+}

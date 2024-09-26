@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Formulário de cadastro</h1>
+    <form action="role" method="get">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for=" nome"> Nome: </label>
+        <input type="text" name="nome" id="nome" required />
+        <br />
+        <label for="email"> Email: </label>
+        <input type="email" name="email" id="email" required />
+        <br />
+        <label for="password"> Senha: </label>
+        <input type="password" name="password" id="password" required />
+        <br />
+        <label for="phone"> Telefone: </label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          minlength="11"
+          maxlength="15"
+          required
+        />
+        <br />
+        <label for="data"> Data de nascimento: </label>
+        <input type="date" id="data" name="data" />
+        <br />
+
+        <label for="country"> Sexo: </label>
+        <select name="country" id="country">
+          <option value="Brasil">Masculino</option>
+          <option value="Argentina">Feminino</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Localização</legend>
+        <label for="cidade">Cidade:</label>
+        <br />
+        <input type="radio" name="sexo" id="feminino" value="feminino" />
+        <label for="feminino"> Feminino </label>
+        <input type="radio" name="sexo" id="masculino" value="masculino" />
+        <label for="masculino"> Masculino </label>
+      </fieldset>
+      <fieldset>
+        <legend>Interesses</legend>
+        <label for="interesses">Selecione seus interesses:</label>
+        <input type="checkbox" name="Tecnologia" id="tecnologia" />
+        <label for="tecnologia"> Tecnologia </label>
+
+        <input type="checkbox" name="esportes" id="esportes" />
+        <label for="esportes"> Esportes </label>
+
+        <input type="checkbox" name="musica" id="musica" />
+        <label for="musica"> Música </label>
+      </fieldset>
+      <fieldset>
+        <legend>Mensagem</legend>
+        <label for="mensagem">Mensagem: </label>
+        <!-- textarea cria uma aba de escrita -->
+        <textarea id="mensagem" name="mensagem"></textarea>
+      </fieldset>
+    </form>
+    <input type="submit" value="Enviar formulário" />
+  </body>
+</html>
