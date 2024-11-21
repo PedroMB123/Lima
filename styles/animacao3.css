@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  text-decoration: none;
+  list-style: none;
+}
+
+.mediaSocial {
+  background-color: white;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.mediaSocial a {
+  width: 90px;
+  height: 90px;
+
+  color: black;
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow: 2px 2px 10px black;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.mediaSocial a i {
+  line-height: 90px;
+  font-size: 30px;
+  transition: 0.7s ease;
+}
+
+.mediaSocial a:hover i {
+  transform: scale(1.2);
+  color: white;
+}
+
+.mediaSocial a::before {
+  content: "";
+  position: absolute;
+  left: -175%;
+  top: -100%;
+  width: 130%;
+  height: 130%;
+  transform: rotate(45deg);
+  background-color: black;
+}
+
+.mediaSocial a:hover::before {
+  animation: icones 0.7s 1 forwards;
+}
+
+@keyframes icones {
+  0% {
+    left: -175%;
+    top: 100%;
+  }
+  50% {
+    left: 10%;
+    top: -15%;
+  }
+  100% {
+    left: -15%;
+    top: -15%;
+  }
+}

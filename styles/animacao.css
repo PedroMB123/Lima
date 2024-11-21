@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  background-color: black;
+  position: relative;
+}
+
+.carousel {
+  width: 80%;
+  height: 620px;
+
+  background-color: pink;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  animation: bgAnimation 7s linear infinite alternate;
+}
+
+@keyframes bgAnimation {
+  0% {
+    background: url("/assets/imagens_animacao/gallery1.jpg") center / cover
+      no-repeat;
+  }
+  30% {
+    background: url("/assets/imagens_animacao/gallery2.jpg") center / cover
+      no-repeat;
+  }
+  60% {
+    background: url("/assets/imagens_animacao/gallery3.jpg") center / cover
+      no-repeat;
+  }
+  100% {
+    background: url("/assets/imagens_animacao/gallery4.jpg") center / cover
+      no-repeat;
+  }
+}
